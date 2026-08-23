@@ -13,7 +13,9 @@ Due diligence registry for cryptocurrency data/statistics MCP servers.
 - `MCP_DUE_DILIGENCE.md` — summary verdicts
 - `results/mcp_due_diligence.json` — full findings
 - `results/mcp_hypothesis_mapping.csv` — hypothesis mapping
+- `results/mcp_tool_inventory.csv` — tool inventory
+- `results/mcp_source_tool_evidence.csv` — source evidence
 - `mcp_due_diligence.py` — analysis script
 
 ## Last run
-2026-08-23T18:25:52Z
+2026-08-23T18:34:06Z

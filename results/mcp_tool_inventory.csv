@@ -1,8 +1,8 @@
 full_name,transport,tool_names,read_only_tools,write_capable_tools,auth,read_only_mode_possible,write_disable_mechanism,tool_schemas_verified
-cyanheads/coingecko-mcp-server,UNKNOWN,NOT_VERIFIED_IN_README,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,False
-doggybee/mcp-server-ccxt,UNKNOWN,NOT_VERIFIED_IN_README,UNKNOWN,trade operations hinted in README,API key / exchange account,UNKNOWN,UNKNOWN,False
-Nayshins/mcp-server-ccxt,UNKNOWN,NOT_VERIFIED_IN_README,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,False
-zkoranges/cryptominute-news-mcp,UNKNOWN,CLAIMS_8_TOOLS_NOT_LISTED,UNKNOWN,UNKNOWN,none,YES,N/A_no_write_tools_claimed,False
-ethpandaops/eth-mcp-server,UNKNOWN,"eth_deployContract, eth_loadContract, eth_callContractMethod, wallet management, send transactions",eth_getBalance?; gas estimation?,eth_deployContract; eth_callContractMethod; send ETH transactions; contract write,private keys / RPC,NO_explicit_write_tools,NOT_IMPLEMENTED,True
-0xKoda/eth-mcp,stdio,"eth_getCode, eth_gasPrice, eth_getBalance",eth_getCode; eth_gasPrice; eth_getBalance,UNKNOWN,RPC key,YES,N/A_no_write_tools,True
-TensorBlock/awesome-mcp-servers,N/A,N/A,N; /; A,N; /; A,N/A,N/A,N/A,False
+cyanheads/coingecko-mcp-server,stdio/http,"coingecko_search_coins, coingecko_get_prices, coingecko_list_categories, coingecko_list_markets, coingecko_get_coin, coingecko_get_market_chart, coingecko_get_trending, coingecko_get_global",all 8 tools,none,none; optional COINGECKO_API_KEY for higher rate limit,YES,N/A_no_write_tools,True
+doggybee/mcp-server-ccxt,UNKNOWN,UNKNOWN,UNKNOWN,trade/order/transfer/leverage hinted,API key / exchange account,UNKNOWN,UNKNOWN,False
+Nayshins/mcp-server-ccxt,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,False
+zkoranges/cryptominute-news-mcp,stdio/http,"crypto_news_search, crypto_analytics, crypto_stories, crypto_news_sources, crypto_reddit_monitor, crypto_youtube_insights, crypto_flash_posts, crypto_prices",all 8 tools,none,none,YES,N/A_no_write_tools,True
+ethpandaops/eth-mcp-server,UNKNOWN,"eth_deployContract, eth_loadContract, eth_callContractMethod, wallet management, send transactions","eth_getBalance?, gas estimation?","eth_deployContract, eth_callContractMethod, send ETH transactions",private keys / RPC,NO_explicit_write_tools,NOT_IMPLEMENTED,True
+0xKoda/eth-mcp,stdio,"eth_getCode, eth_gasPrice, eth_getBalance","eth_getCode, eth_gasPrice, eth_getBalance",none,RPC key,YES,N/A_no_write_tools,True
+TensorBlock/awesome-mcp-servers,N/A,N/A,N/A,N/A,N/A,N/A,N/A,False
