@@ -1,0 +1,182 @@
+[
+  {
+    "id": "coingecko-mcp-server",
+    "url": "https://github.com/cyanheads/coingecko-mcp-server",
+    "name": "CoinGecko MCP Server",
+    "author": "cyanheads",
+    "summary": "Market data for 15000+ cryptocurrencies — prices, history, trends, and deep coin metadata via CoinGecko.",
+    "category": "market-data",
+    "tags": [
+      "coingecko",
+      "prices",
+      "history",
+      "metadata"
+    ],
+    "target_use": "Быстрый обзор рынка без регистрации на бирже.",
+    "pros": [
+      "Большой Coverage: 15 000+ монет и метаданных.",
+      "Простота интеграции: открытые данные CoinGecko, не нужен API-ключ биржи.",
+      "Удобно для первичного скоринга и анализа трендов."
+    ],
+    "cons": [
+      "Только CoinGecko: нет данных с биржи напрямую.",
+      "Могут быть лимиты/задержки бесплатного API.",
+      "Нет ончейн-статистики."
+    ],
+    "risk": "low",
+    "notes": "Экосистемный вариант для рынка в целом. Для точности по конкретной бирже может не хватать."
+  },
+  {
+    "id": "mcp-server-ccxt",
+    "author": "doggybee",
+    "url": "https://github.com/doggybee/mcp-server-ccxt",
+    "name": "CCXT MCP Server",
+    "summary": "Connects LLMs to cryptocurrency exchanges through the Model Context Protocol using CCXT.",
+    "category": "exchange-data",
+    "tags": [
+      "ccxt",
+      "exchanges",
+      "market-data",
+      "trading"
+    ],
+    "target_use": "Данные с бирж: цены, тикеры, стакан, история и возможная торговля.",
+    "pros": [
+      "Унифицированный доступ к множеству бирж через CCXT.",
+      "Подходит для точных рыночных данных и выполнения операций."
+    ],
+    "cons": [
+      "Сложнее в настройке по сравнению с CoinGecko-only.",
+      "Нужны аккаунты/ключи на целевых биржах.",
+      "Зависимость от доступности API биржи."
+    ],
+    "risk": "medium",
+    "notes": "Хороший вариант, когда нужны не только цены, но и стакан/история конкретной биржи."
+  },
+  {
+    "id": "mcp-server-ccxt-nayshins",
+    "author": "Nayshins",
+    "url": "https://github.com/Nayshins/mcp-server-ccxt",
+    "name": "Cryptocurrency Market Data MCP Server",
+    "summary": "Real-time and historical cryptocurrency market data from major exchanges using the CCXT library.",
+    "category": "exchange-data",
+    "tags": [
+      "ccxt",
+      "market-data",
+      "exchanges",
+      "historical"
+    ],
+    "target_use": "Рыночные данные в реальном времени и исторические данные по биржам.",
+    "pros": [
+      "Реальное время + история через CCXT.",
+      "Описание подходит для аналитических пайплайнов."
+    ],
+    "cons": [
+      "Состояние репозитория и freshness нуждаются в проверке перед продакшеном.",
+      "Может дублировать doggybee/mcp-server-ccxt по смыслу."
+    ],
+    "risk": "medium",
+    "notes": "Перед выбором в основной пайплайн нужно сверить последний релиз, тесты и поддержку Python/Node версий."
+  },
+  {
+    "id": "cryptominute-news-mcp",
+    "author": "zkoranges",
+    "url": "https://github.com/zkoranges/cryptominute-news-mcp",
+    "name": "CryptoMinute News MCP",
+    "summary": "AI-powered crypto news intelligence: 8 tools, 50+ sources, Reddit sentiment, YouTube engagement, historical prices.",
+    "category": "news-sentiment",
+    "tags": [
+      "news",
+      "sentiment",
+      "reddit",
+      "youtube",
+      "clustering"
+    ],
+    "target_use": "Дополнительный слой сигналов: новости и сентимент, не чистые цены.",
+    "pros": [
+      "Мультиисточникный сентимент и кластеризация.",
+      "Может усиливать фильтры сигналов."
+    ],
+    "cons": [
+      "Не заменяет market data / execution MCP.",
+      "Шумность новостного потока требует дополнительной фильтрации."
+    ],
+    "risk": "medium",
+    "notes": "Лучше как дополнение к market/exchange MCP, а не как единственный источник."
+  },
+  {
+    "id": "eth-mcp-server",
+    "author": "ethpandaops",
+    "url": "https://github.com/ethpandaops/eth-mcp-server",
+    "name": "ETH MCP Server",
+    "summary": "Ethereum address validation, gas fee estimation, wallet balance checking, smart contract ownership.",
+    "category": "onchain-ethereum",
+    "tags": [
+      "ethereum",
+      "onchain",
+      "gas",
+      "wallet",
+      "contracts"
+    ],
+    "target_use": "Ончейн-статистика и взаимодействие с EVM: балансы, газ, контракты.",
+    "pros": [
+      "Специализация под Ethereum и EVM.",
+      "Полезно для аудита кошельков и контрактов."
+    ],
+    "cons": [
+      "Узкая специализация: не подходит для общей крипто-статистики.",
+      "Может требовать свой RPC-провайдер/ноду."
+    ],
+    "risk": "medium",
+    "notes": "Использовать только для ETH/ончейн-задач, не как основной market data сервер."
+  },
+  {
+    "id": "eth-mcp",
+    "author": "0xKoda",
+    "url": "https://github.com/0xKoda/eth-mcp",
+    "name": "Ethereum RPC MCP Server",
+    "summary": "Query Ethereum blockchain data through standard JSON-RPC methods.",
+    "category": "onchain-ethereum",
+    "tags": [
+      "ethereum",
+      "json-rpc",
+      "onchain"
+    ],
+    "target_use": "Прямой JSON-RPC доступ к Ethereum-ноде через MCP.",
+    "pros": [
+      "Ближе к инфраструктуре: стандартный JSON-RPC интерфейс.",
+      "Можно завести под собственную ноду/провайдера."
+    ],
+    "cons": [
+      "Требует поддерживаемого RPC-эндпоинта.",
+      "Меньше абстракции, больше ручной работы."
+    ],
+    "risk": "medium",
+    "notes": "Подходит, если уже есть инфраструктурный слой для Ethereum."
+  },
+  {
+    "id": "awesome-mcp-servers-finance-crypto",
+    "author": "TensorBlock",
+    "url": "https://github.com/TensorBlock/awesome-mcp-servers/blob/main/docs/finance--crypto.md",
+    "name": "Awesome MCP Servers — Finance & Crypto",
+    "summary": "Curated crypto/finance MCP list: CoinGecko, on-chain data, Uniswap tools, and related servers.",
+    "category": "curation",
+    "tags": [
+      "awesome-list",
+      "catalog",
+      "coingecko",
+      "onchain",
+      "dex"
+    ],
+    "target_use": "Навигация по вариантам, а не продакшен-сервер сам по себе.",
+    "pros": [
+      "Хорошая точка входа для подбора.",
+      "Содержит ссылки на специализированные решения."
+    ],
+    "cons": [
+      "Не заменяет конкретный сервер.",
+      "Качество ссылок нужно проверять на свежесть."
+    ],
+    "risk": "low",
+    "notes": "Использовать как индекс, а не как единственный источник выбора."
+  }
+]
