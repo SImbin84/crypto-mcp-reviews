@@ -1,0 +1,122 @@
+[
+  {
+    "label": "crypto-news-search BTC 7d",
+    "path": "/news",
+    "status": null,
+    "latency_ms": 1602,
+    "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "data": null
+  },
+  {
+    "label": "crypto-news-search ETH 7d",
+    "path": "/news",
+    "status": null,
+    "latency_ms": 4,
+    "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "data": null
+  },
+  {
+    "label": "crypto-stories BTC 30d",
+    "path": "/stories",
+    "status": null,
+    "latency_ms": 4,
+    "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "data": null
+  },
+  {
+    "label": "crypto-flash-posts BTC recent",
+    "path": "/flash-posts",
+    "status": null,
+    "latency_ms": 4,
+    "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "data": null
+  },
+  {
+    "label": "crypto-reddit-monitor BTC 30d",
+    "path": "/reddit",
+    "status": null,
+    "latency_ms": 4,
+    "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "data": null
+  },
+  {
+    "label": "crypto-youtube-insights BTC 30d",
+    "path": "/youtube",
+    "status": null,
+    "latency_ms": 4,
+    "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "data": null
+  },
+  {
+    "label": "crypto-prices BTC 30d",
+    "path": "/prices",
+    "status": null,
+    "latency_ms": 4,
+    "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "data": null
+  },
+  {
+    "label": "crypto-analytics BTC 30d",
+    "path": "/analytics",
+    "status": null,
+    "latency_ms": 4,
+    "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "data": null
+  },
+  {
+    "label": "crypto-news-sources",
+    "path": "/sources",
+    "status": null,
+    "latency_ms": 4,
+    "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "data": null
+  },
+  {
+    "label": "crypto-news-search BTC 7d repeat 1",
+    "path": "/news",
+    "status": null,
+    "latency_ms": 4,
+    "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "data": null
+  },
+  {
+    "label": "crypto-news-search BTC 7d repeat 2",
+    "path": "/news",
+    "status": null,
+    "latency_ms": 4,
+    "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "data": null
+  },
+  {
+    "label": "crypto-news-search ETH 7d repeat 1",
+    "path": "/news",
+    "status": null,
+    "latency_ms": 4,
+    "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "data": null
+  },
+  {
+    "label": "crypto-news-search ETH 7d repeat 2",
+    "path": "/news",
+    "status": null,
+    "latency_ms": 4,
+    "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "data": null
+  },
+  {
+    "label": "crypto-stories BTC 30d repeat 1",
+    "path": "/stories",
+    "status": null,
+    "latency_ms": 4,
+    "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "data": null
+  },
+  {
+    "label": "crypto-stories BTC 30d repeat 2",
+    "path": "/stories",
+    "status": null,
+    "latency_ms": 4,
+    "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "data": null
+  }
+]

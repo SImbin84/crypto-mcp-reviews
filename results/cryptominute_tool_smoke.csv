@@ -1,0 +1,10 @@
+label,path,status,latency_ms,error,count,earliest,latest,stable_id,ticker,source_url,published_timestamp,sentiment,significance_or_impact,pagination,sample_keys
+crypto-news-search BTC 7d,/news,,1602,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",,,,False,False,False,False,False,False,False,
+crypto-news-search ETH 7d,/news,,4,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",,,,False,False,False,False,False,False,False,
+crypto-stories BTC 30d,/stories,,4,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",,,,False,False,False,False,False,False,False,
+crypto-flash-posts BTC recent,/flash-posts,,4,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",,,,False,False,False,False,False,False,False,
+crypto-reddit-monitor BTC 30d,/reddit,,4,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",,,,False,False,False,False,False,False,False,
+crypto-youtube-insights BTC 30d,/youtube,,4,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",,,,False,False,False,False,False,False,False,
+crypto-prices BTC 30d,/prices,,4,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",,,,False,False,False,False,False,False,False,
+crypto-analytics BTC 30d,/analytics,,4,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",,,,False,False,False,False,False,False,False,
+crypto-news-sources,/sources,,4,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",,,,False,False,False,False,False,False,False,
