@@ -37,7 +37,9 @@ Verified run: 2026-08-23T18:34:06Z
 
 - H relevance: FUTURE_NEWS_EVENT_STUDY
 
-- Why not integrate now: All 8 tools verified read-only from source/schemas; no auth required; historical datetime filters present; no write actions.
+- Why not integrate now: **API_UNRELIABLE**. DNS `api.cryptominute.com` does not resolve from sandbox/network; runtime data access is unconfirmed. No MCP integration until live endpoint reachability is independently verified.
+
+- Repeat rule: do not re-run CryptoMinute probe without a new independent basis: new documented domain, official docs, confirmed endpoint, or infrastructure change.
 
 
 > Ни один сервер не разрешён для execution или доступа к секретам без отдельного approval.
